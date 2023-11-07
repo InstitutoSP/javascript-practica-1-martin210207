@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicios JavaScript</title>
+</head>
+<body>
+  <script>
+    var nombre = "Martín";
+    var edad = 16; 
+    var esEstudiante = true; 
+
+    function saludar(name) {
+      console.log("¡Hola, " + name + "!");
+    }
+
+    saludar(nombre); 
+
+    var numero = prompt("Por favor, ingresa un número:");
+    
+    if (numero > 0) {
+      console.log("El número es positivo.");
+    } else if (numero < 0) {
+      console.log("El número es negativo.");
+    } else {
+      console.log("El número es igual a cero.");
+    }
+
+    var contador = 1;
+    
+    console.log("Bucle while:");
+    while (contador <= 5) {
+      console.log(contador);
+      contador++;
+    }
+    
+    console.log("Bucle for:");
+    for (var i = 1; i <= 5; i++) {
+      console.log(i);
+    }
+
+    var button = document.createElement("button");
+    button.innerHTML = "Haz clic";
+    document.body.appendChild(button);
+    
+    button.addEventListener("click", function() {
+      alert("¡Has hecho clic en el botón!");
+    });
+
+    var numeroDia = parseInt(prompt("Ingresa un número del 1 al 7 para representar un día de la semana:"));
+
+    switch (numeroDia) {
+      case 1:
+        console.log("Lunes");
+        break;
+      case 2:
+        console.log("Martes");
+        break;
+      case 3:
+        console.log("Miércoles");
+        break;
+      case 4:
+        console.log("Jueves");
+        break;
+      case 5:
+        console.log("Viernes");
+        break;
+      case 6:
+        console.log("Sábado");
+        break;
+      case 7:
+        console.log("Domingo");
+        break;
+      default:
+        console.log("Número no válido, por favor ingresa un número del 1 al 7.");
+    }
+  </script>
+</body>
+</html>
